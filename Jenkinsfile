@@ -4,10 +4,12 @@ pipeline {
   
   stages {
     stage('pull image'){
+      steps{
     agent{
       docker {
       image 'sharmamukesh76/autonode:latest'
     }
+}
 }
 }
     stage('Build') {
