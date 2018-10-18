@@ -1,18 +1,12 @@
 pipeline {
   agent{
-     label 'docker-agent'
-	} 
-  
-  stages {
-    stage('pull image'){
-      steps{
     agent{
       docker {
         image 'sharmamukesh76/autonode:latest'
     }
     }
      }
-     }
+   stages {
     stage('Build') {
       steps {
         sh 'npm install'
