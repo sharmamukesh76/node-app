@@ -1,11 +1,10 @@
 pipeline {
-  agent{
     agent{
       docker {
         image 'sharmamukesh76/autonode:latest'
     }
     }
-     }
+     
    stages {
     stage('Build') {
       steps {
