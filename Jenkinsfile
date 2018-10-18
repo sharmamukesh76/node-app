@@ -1,5 +1,10 @@
 pipeline {
     agent{
+        node{
+           label 'docker-agent'
+	}
+}
+    agent{
       docker {
         image 'sharmamukesh76/autonode:latest'
     }
