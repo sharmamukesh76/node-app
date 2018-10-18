@@ -6,7 +6,7 @@ pipeline {
 }
     agent{
       docker {
-        image 'sharmamukesh76/autonode:latest'
+        image 'sharmamukesh76/autonode:1.0'
     }
     }
      
