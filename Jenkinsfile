@@ -1,7 +1,7 @@
 pipeline {
-  agent {
+  agent docker{
     docker {
-      image 'goforgold/build-container:latest'
+      image 'sharmamukesh76/autonode:latest'
     }
   }
   stages {
